@@ -1,0 +1,9 @@
+interface:
+  display_name: "ChatCut 主题口播精剪"
+  short_description: "从口播素材到中文配图、MG 动画和成片验证的完整精剪流程"
+  default_prompt: "使用 $chatcut-topic-video-editor，根据我提供的视频、截图、参考素材和主题，用 ChatCut 完成口播精简、素材上轨、中文视觉包装与验证。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "chatcut"
+      description: "ChatCut project, transcript, timeline, Motion Graphics, verification, and export tools"
