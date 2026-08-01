@@ -112,6 +112,12 @@ ln -s /你的绝对路径/chatcutskills/chatcut-topic-video-editor \
 - 默认交付可编辑的 ChatCut 工程；只有明确要求时才导出 MP4
 - 交付报告会列出已使用和未使用的用户素材，并说明原因
 
+## AI 生成图片的默认风格
+
+- `chatcut-topic-video-editor/assets/generated-image-style/` 中的六张内置参考图，只作为 AI 生成补充静帧的默认风格锚点。
+- 真实截图和可编辑的中文文字／Motion Graphics 不继承这些参考图的插画风格。
+- 如果任务明确指定了生成图片的风格，应以该任务级风格覆盖内置默认风格。
+
 ## 预期交付
 
 流程完成后，Codex 会返回：
@@ -133,6 +139,8 @@ chatcutskills/
     ├── SKILL.md
     ├── agents/
     │   └── openai.yaml
+    ├── assets/
+    │   └── generated-image-style/
     └── references/
         ├── editorial-workflow.md
         ├── visual-assets.md
