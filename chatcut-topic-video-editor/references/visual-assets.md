@@ -9,6 +9,7 @@ Use this reference to plan and acquire software screenshots, supplementary image
 - Integrating reference media
 - Software screenshots
 - Supplementary images
+- Generated-image style references
 - Text inside generated images
 - Chinese-first Motion Graphics
 - Style alignment
@@ -92,6 +93,21 @@ Good uses:
 - A before/after storage or workflow concept
 
 Avoid generating a screenshot that could be mistaken for the real product interface.
+
+## Generated-image style references
+
+- **Scope:** newly generated supplementary stills only; never authentic screenshots, source media, captions, titles, callouts, or Motion Graphics.
+- **Style:** warm off-white paper, bold black hand-drawn outlines, simple doodle/infographic forms, cyan and yellow accents, optional pale-green shadow, and generous whitespace.
+- **Selection:** choose 1–3 images by target aspect ratio and diagram complexity:
+  - `16:9` → `assets/generated-image-style/16_9.png` plus one relevant diagram example
+  - `3:4` → `assets/generated-image-style/3_4.png`
+  - `4:3` → `assets/generated-image-style/4_3.png`
+  - Diagram-heavy → `assets/generated-image-style/vibewriting.png`, `assets/generated-image-style/交互.png`, or `assets/generated-image-style/手速跟不上脑速.png`
+- **ChatCut flow:** import selected files as internal `style-only` assets, then pass their returned project asset IDs in `referenceAssetIds`. Never place these internal references on the timeline unless separately requested as visible media.
+- **Prompt:** transfer style only; do not copy wording, logos, subject matter, or exact composition.
+- **Text:** keep important Chinese wording out of generated pixels and add it later as editable Motion Graphics.
+- **Override:** obey an explicit task-level generated-image style instead.
+- **Fallback:** if references cannot be passed, use this written style contract and disclose the fallback.
 
 ## Text inside generated images
 

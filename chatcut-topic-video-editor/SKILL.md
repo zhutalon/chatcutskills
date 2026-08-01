@@ -97,6 +97,8 @@ Create a compact material map before placement:
 
 Prefer authentic software screenshots for software-specific claims. When a generated still is needed, generate the scene without embedded text and add Chinese wording as an editable Motion Graphic.
 
+When a new supplementary still will be model-generated, read the generated-image subsection in [references/visual-assets.md](references/visual-assets.md). Use `assets/generated-image-style` references only for those generated stills; screenshots, source media, captions, titles, callouts, and Motion Graphics do not inherit this style. Import the selected references as internal `style-only` assets, pass their project asset IDs in `referenceAssetIds`, and never place those internal references on the timeline unless separately requested as visible media.
+
 ## Apply one visual language
 
 Use the active project Design Style when one exists. Otherwise:
